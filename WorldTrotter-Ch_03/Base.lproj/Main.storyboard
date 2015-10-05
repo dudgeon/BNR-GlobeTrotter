@@ -15,12 +15,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees fahrenheit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll7-DU-h9y">
+                                <rect key="frame" x="143" y="79" width="314" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ku-yd-yOu">
+                                <rect key="frame" x="237" y="130" width="126" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TML-HO-cxw">
+                                <rect key="frame" x="268" y="181" width="64" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5n-rj-AMN">
+                                <rect key="frame" x="170" y="232" width="260.5" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="212" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OP-EH-C69">
+                                <rect key="frame" x="270" y="28" width="60.5" height="43"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="M5n-rj-AMN" firstAttribute="top" secondItem="TML-HO-cxw" secondAttribute="bottom" constant="8" id="4CH-fE-ysq"/>
+                            <constraint firstItem="M5n-rj-AMN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B58-Bv-mIW"/>
+                            <constraint firstItem="3ku-yd-yOu" firstAttribute="top" secondItem="ll7-DU-h9y" secondAttribute="bottom" constant="8" id="DnW-xs-DKo"/>
+                            <constraint firstItem="3ku-yd-yOu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PIk-0A-P8I"/>
+                            <constraint firstItem="ll7-DU-h9y" firstAttribute="top" secondItem="1OP-EH-C69" secondAttribute="bottom" constant="8" id="WZ9-oc-2aj"/>
+                            <constraint firstItem="ll7-DU-h9y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cnR-gr-6nb"/>
+                            <constraint firstItem="1OP-EH-C69" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i2Q-po-ZNu"/>
+                            <constraint firstItem="TML-HO-cxw" firstAttribute="top" secondItem="3ku-yd-yOu" secondAttribute="bottom" constant="8" id="iD1-Av-CXg"/>
+                            <constraint firstItem="1OP-EH-C69" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ia7-bp-ciH"/>
+                            <constraint firstItem="TML-HO-cxw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="itZ-HZ-pMY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="549" y="514"/>
         </scene>
     </scenes>
 </document>
