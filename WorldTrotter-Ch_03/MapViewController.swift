@@ -22,7 +22,13 @@ class MapViewController: UIViewController {
         view = mapView
         
         // let's programmatically create a segmented control for the map interface
-        let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
+        // let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"]) //-localization... reference a strings table...
+        let standardString = NSLocalizedString("Standard", comment: "Foobar")
+        let satelliteString = NSLocalizedString("Satellite", comment: "Foobar")
+        let hybridString = NSLocalizedString("Hybrid", comment: "Foobar")
+        let segmentedControl = UISegmentedControl(items: [standardString, satelliteString, hybridString ])
+        
+        
         segmentedControl.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
         segmentedControl.selectedSegmentIndex = 0
         

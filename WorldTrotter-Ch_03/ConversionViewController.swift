@@ -51,11 +51,19 @@ class ConversionViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func fahrenheitFieldEditingChanged(textField: UITextField) {
 
-        if let text = textField.text, value = Double(text) {
-            fahrenheitValue = value
+        // again, localization: func gets thrown off by presence of a ',' as localized decimal separator
+        //if let text = textField.text, value = Double(text) {
+        //    fahrenheitValue = value
+        //} else {
+        //    fahrenheitValue = nil
+        //}
+        
+        if let text = textField.text, number = numberFormatter.numberFromString(text) {
+            fahrenheitValue = number.doubleValue
         } else {
             fahrenheitValue = nil
         }
+        
         
     }
     
@@ -66,8 +74,16 @@ class ConversionViewController: UIViewController, UITextViewDelegate {
     // I think we're about to prevent the user for entering multiple decimels
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
-        let existingTextHasDecimalSeparator = textField.text?.rangeOfString(".")
-        let replacementTextHasDecimalSeparator = string.rangeOfString(".")
+        // figure out which decimal separator is used in current locale
+        let currentLocale = NSLocale.currentLocale()
+        let decimalSeparator = currentLocale.objectForKey(NSLocaleDecimalSeparator) as! String
+        
+        // prevent duplicate (decimalSeparator), vs. simply '.'
+        //let existingTextHasDecimalSeparator = textField.text?.rangeOfString(".")
+        //let replacementTextHasDecimalSeparator = string.rangeOfString(".")
+        let existingTextHasDecimalSeparator = textField.text?.rangeOfString(decimalSeparator)
+        let replacementTextHasDecimalSeparator = string.rangeOfString(decimalSeparator)
+        
         
         if existingTextHasDecimalSeparator != nil && replacementTextHasDecimalSeparator != nil {
             return false

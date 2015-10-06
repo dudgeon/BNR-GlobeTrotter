@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6CC372591BC34D7300189F10 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC372581BC34D7300189F10 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6CC520D81BC450DB00B2F90C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CC520D71BC450DB00B2F90C /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
 		6CD17E5E1BC2F9B800463CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD17E5D1BC2F9B800463CE3 /* AppDelegate.swift */; };
 		6CD17E631BC2F9B800463CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD17E611BC2F9B800463CE3 /* Main.storyboard */; };
 		6CD17E651BC2F9B800463CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD17E641BC2F9B800463CE3 /* Assets.xcassets */; };
@@ -36,7 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C72A7D81BC449C800A1F5EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		6CB00ADB1BC44CE100E4B7C6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		6CC372581BC34D7300189F10 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6CC520D71BC450DB00B2F90C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		6CD17E5A1BC2F9B800463CE3 /* WorldTrotter-Ch_03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WorldTrotter-Ch_03.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD17E5D1BC2F9B800463CE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CD17E621BC2F9B800463CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		6CD17E5C1BC2F9B800463CE3 /* WorldTrotter-Ch_03 */ = {
 			isa = PBXGroup;
 			children = (
+				6CC520D71BC450DB00B2F90C /* Localizable.strings */,
 				6CF520541BC339B200FFC266 /* ConversionViewController.swift */,
 				6CD17E5D1BC2F9B800463CE3 /* AppDelegate.swift */,
 				6CD17E611BC2F9B800463CE3 /* Main.storyboard */,
@@ -236,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CD17E681BC2F9B800463CE3 /* LaunchScreen.storyboard in Resources */,
+				6CC520D81BC450DB00B2F90C /* Localizable.strings in Resources */,
 				6CD17E651BC2F9B800463CE3 /* Assets.xcassets in Resources */,
 				6CD17E631BC2F9B800463CE3 /* Main.storyboard in Resources */,
 			);
@@ -304,6 +310,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				6CD17E621BC2F9B800463CE3 /* Base */,
+				6C72A7D81BC449C800A1F5EF /* en */,
+				6CB00ADB1BC44CE100E4B7C6 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
