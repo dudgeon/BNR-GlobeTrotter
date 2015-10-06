@@ -77,6 +77,13 @@ class ConversionViewController: UIViewController, UITextViewDelegate {
     }
     
     
+    override func viewDidLoad() {
+        // Always call the super implementation of viewDidLoad
+        super.viewDidLoad()
+        
+        print("ConversionViewController loaded its view.")
+        
+    }
     
     
 }
